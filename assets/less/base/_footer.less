@@ -1,0 +1,129 @@
+/*----------------------------------Footer----------------------------*/
+
+footer {
+    margin-top: 30px;
+    background-color: @color-x-d;
+
+    .footer__nav {
+        padding-top: 63px;
+        padding-bottom: 10px;
+        img{
+            text-align: left;
+        }
+
+        hr {
+            margin: 50px 0 20px 0;
+            width: 100%;
+            height: 0;
+            border: none;
+            border-top: 1px solid @color-2b;
+
+        }
+
+        nav {
+
+            margin-top: 87px;
+            .text-value(14px, 24px, 700, 1px, 'Fira Sans');
+            text-transform: @tran;
+            ul {
+                list-style: none;
+                .flex-display;
+                .flex-direction-row;
+                justify-content: center;
+                .transform-translate(-8px, -1px);
+                li {
+                    a {
+                        padding: 10px 20px 10px 20px;
+                        text-decoration: none;
+                        color: @color-x;
+                        &:hover {
+                            color: @color-v;
+                        }
+                    }
+                }
+
+                .nav-item-1 {
+                    .transform-translate(19px, 0);
+                }
+                .nav-item-2 {
+                    .transform-translate(14px, 0);
+                }
+                .nav-item-3 {
+                    .transform-translate(9px, 0);
+                }
+                .nav-item-4 {
+                    .transform-translate(5px, 0);
+                }
+                .nav-item-5 {
+                    .transform-translate(2px, 0);
+                }
+                .nav-item-6 {
+                    .transform-translate(-3px, 0);
+                }
+            }
+        }
+
+        .subscribe {
+            margin: 77px 0 20px 0;
+            text-align: right;
+            padding: 6px 10px;
+            width: 160px;
+            height: 40px;
+            border: 2.5px solid @color-4;
+            .transform-translate(11px, 0px);
+            a {
+                text-decoration: none;
+                .text-value(14px, 24px, 700, 2px, 'Fira Sans');
+                text-transform: @tran;
+                color: @color-x;
+                i {
+                    color: @color-v;
+                    font-size: 15px;
+                    padding: 0 10px; 
+                    .transform-translate(2px, 1px);
+                }
+            }
+        }
+
+        
+       
+    }
+    .footer__about {
+        padding-bottom: 75px;
+
+        p {
+            .text-value(14px, 28px, 400, 0, 'Fira Sans');
+            text-align: left;
+            color: @color-d-x;
+            .transform-translate(0, 9px);
+        }
+
+        ul {
+            .flex-display;
+            .flex-direction-row;
+            justify-content: flex-end;
+            list-style: none;
+            .transform-translate(0, -2px);
+            li {
+                padding-left: 7px;
+                .fa {
+                    padding: 15px 5px;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    border: 2px solid @color-4;
+                    color: @color-x;
+
+                    &:hover {
+                        color:@color-b;
+                        background: @color-v;
+                    }
+                }
+            } 
+        }
+         
+    }
+    
+}

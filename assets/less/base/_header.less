@@ -1,0 +1,131 @@
+
+/*----------------------------------Header----------------------------*/
+
+header {
+    .content {
+        z-index: 2;
+        position: relative;
+        a {
+            text-decoration: none;
+        }
+        &__layouts {
+            display: flex;
+            justify-content: space-between;
+            .transform-translate(0, 28px);
+
+            .content__nav {
+                font-size: 20px;
+                .transform-translate(0,13px);
+                .content__cart {
+                    padding: 0 12px 0 34px;
+                    position: relative;
+                    color: @color-w;
+                }
+                .bag {
+                    .text-value(12px, 16px, 700, 0,'Lato');
+                    position: absolute;
+                    top: -30%;
+                    right: 7%;
+                    padding: 2px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: @color-w;
+                    color: @color-x-d;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .header__banner {
+        z-index: 1;
+        top: 0;
+        position:absolute;
+        div {
+            padding: 0;
+            img {       
+                height: auto;
+                max-width: 100%;
+            }
+        } 
+    }
+
+    .header-title {
+        z-index: 2;
+        position: relative;
+        .transform-translate(0, 79%);
+        .flex-display;
+        .flex-direction-row;
+        flex-wrap: nowrap;
+        .sub-header-title {
+            h5 {
+                .text-value(24px, 32px, 400, 12px, 'Fira Sans');  
+                color: @color-d-x;
+                .transform-translate(18px, 5px);
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                width: 90%;
+                .text-value(100px, 100px, 600, 30px, 'Cormorant Garamond'); 
+                text-transform: @tran;
+                color: @color-x-d;
+                text-align: left;
+                font-style: italic;
+                .transform-translate(16px, 18px);
+                margin-bottom: 40px;
+            }
+            
+            div {
+                .transform-translate(13px, 36px);
+                background-color: @color-x-d;
+                padding: 10px;
+                width: 17%;
+                text-align: center;
+                a {
+                    .text-value(16px, 24px, 700, 2px, 'Fira Sans'); 
+                    text-transform: @tran;
+                    color: @color-w;
+                    &:hover {
+                        color: @color-r;
+                    }
+                }
+            }
+        }
+
+        .header__social {
+            position: absolute;
+            right: 5%;
+            top: 29%;
+            .transform-translate(-6px, -2px);
+            ul {
+                .flex-display;
+                .flex-direction-column;
+                li {
+                    list-style: none;
+                    text-align: right;
+                    a{
+                        .text-value(24px, 40px, 500, 2px, 'Cormorant Garamond');
+                        color: @color-w;
+                        .opacity(0.5);
+                        text-decoration: none;
+                        position: relative;
+                        &:hover {
+                            .opacity(1);
+                            &::before {
+                                top: 15px;
+                                position: absolute;
+                                content: '';
+                                left: 120px;
+                                height: 2px;
+                                width: 50px;
+                                background-color: @color-b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

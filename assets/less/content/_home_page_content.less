@@ -1,0 +1,453 @@
+/*----------------------------------Home page----------------------------*/
+
+main {
+    margin-top: 600px;
+    position: relative;
+    .main__intro {
+        border-bottom: 1px @color-x solid;
+        
+        position: relative;
+        h6 {
+            .text-value(18px, 28px, 700, 2px, 'Cormorant Garamond');
+                text-align: center;
+                text-transform: @tran;
+                color: @color-x-d;
+        }
+        p {
+            text-align: center;
+            color: @color-x;
+            .text-value(14px, 28px, 400, 0, 'Fira Sans');
+            .transform-translate(-1px, -11px);
+        }
+        &__item {
+            .transform-translate(-9px, 10px);
+        }
+
+        .intro-item-2 {
+            .transform-translate(3px, 10px);
+        }
+        .intro-item-3 {
+            .transform-translate(-2px, 10px);
+        }
+    }
+
+    .main__title {
+        margin: 89px;
+        h3 {
+            padding: 20px 0;
+            text-align: center;
+            .text-value(34px, 48px, 600, 0, 'Cormorant Garamond');
+            color: @color-x-d;
+            .transform-translate(1px, -1px);
+        }
+    }
+    .main__item {
+        margin-top: 100px;
+        position: relative;
+        img {
+            padding: 2px 0 20px 0;
+            padding-bottom: 20px;
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 30px;
+        }
+        .name {
+            .text-value(24px, 36px, 400, 1px, 'Fira Sans');
+            padding: 2px;;
+            color: @color-x-d;
+            text-align: center;
+        }
+        .price {
+            .text-value(24px, 36px, 700, 1px, 'Cormorant Garamond');
+            color: @color-v;
+            text-transform: @tran;
+            text-align: center;
+            .transform-translate(1px, -4px);
+        }
+
+        .main-sub-item-1 {
+            position: relative;
+            .item__content-1 {
+                position: absolute;
+                bottom: 10%;
+                left: 30%;
+                .transform-translate(-9px, -15px);
+            }
+        }
+        .main-sub-item-2 {
+            position: relative;  
+            .item__content-2 {
+                align-content: center;
+                position: absolute;
+                top: 20%;
+                left: 65%;
+                text-align: center;
+                .transform-translate(2px, 13px);
+                p {
+                    .text-value(18px, 64px, 400, 3px, 'Fira Sans');
+                    color: @color-x-d;
+                    .transform-translate(-1px, -16px);
+                }
+                h5  {
+                    .text-value(24px, 64px, 700, 0, 'Cormorant Garamond');
+                    color: @color-d-x;
+                    margin-bottom: 24px;
+                    span {
+                        font-size: 100px;
+                        line-height: 36px;
+                        color: @color-x-d;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    .text-value(14px, 64px, 700, 3px, 'Fira Sans');
+                    color: @color-d-x;
+                    text-transform: @tran;
+                }
+            }
+        }
+        .main-sub-item-3 {
+            position: relative;
+            .item__content-3 {
+                position: absolute;
+                bottom: 20%;
+                left: 20%;
+                text-align: left;
+                .transform-translate(-8px, -8px);
+                p {
+                    .text-value(14px, 24px, 400, 3px, 'Fira Sans');
+                    color: @color-x-d;
+                    text-transform: @tran;
+                    .transform-translate(1px, -23px);
+                }
+
+                h4 {
+                    .text-value(72px, 47px, 700, 0px, 'Cormorant Garamond');
+                    color: @color-v;
+                    word-spacing: 15px;
+                }
+            }
+        }
+        .main-sub-item-5 {
+            position: relative;
+            .item__content-5 {
+                position: absolute;
+                bottom: 10%;
+                left: 20%;
+                .transform-translate(3px, -17px);
+            }
+        }
+        .main-sub-item-6 {
+            .item__content-6 {
+                position: absolute;
+                text-align: left;
+                bottom: 50%;
+                left: 10%;
+                .transform-translate(-9px, 31px);
+                h4 {
+                    .text-value(48px, 56px, 700, 0px, 'Cormorant Garamond');
+                    color: @color-x-d;
+                }
+                p {
+                    .text-value(14px, 24px, 400, 1px, 'Fira Sans');
+                    color: @color-d-x;
+                    .transform-translate(3px, 11px);
+                }
+            }
+        }
+    }
+
+    .main__product {
+        margin-top: 20px;
+
+        &__title {
+            margin: 20px -15px;
+            padding: 26px 0px;
+            box-sizing: border-box;
+            h2 {
+                padding: 20px 0;
+                .text-value(56px, 28px, 700, 0, 'Cormorant Garamond');
+                text-align: left;
+                color: @color-x-d;
+            }
+            .product-button {
+                .transform-translate(-8px, 58px);
+                text-align: right;
+                a {
+                    text-transform: @tran;
+                    text-decoration: none;
+                    .text-value(14px, 24px, 700, 2px, 'Fira Sans');
+                    color: @color-x-d;
+
+                    i {
+                        padding-left: 8px;
+                        color: @color-v;
+                    }
+                }
+            }
+            
+        }
+        
+        .name-product {
+            margin-top: 10px;
+            .text-value(14px, 30px, 400, 1px, 'Fira Sans');
+            color: @color-x-d;
+            text-align: center;
+            .transform-translate(4px, 3px);
+        }
+
+        .price-product {
+            .text-value(18px, 20px, 700, 1px, 'Cormorant Garamond');
+            color: @color-v;
+            text-align: center;
+            .transform-translate(0px, -10px);
+        }
+
+        .sub-product-1 {
+            margin-top: 25px;
+        }
+
+        .sub-product-2 {
+            margin-top: 10px;
+            .name-product {
+                .transform-translate(3px, 4px);
+            }
+            .price-product {
+                .transform-translate(0px, -9px);
+            }
+        }
+
+        .product-hover {
+            align-items: center;
+            position: relative;
+            padding: 0;
+            img {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+
+            .product-hover-out {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                .opacity(0);
+
+                .add-to-cart {
+                    position: absolute;
+                    bottom: 0;
+                    background: rgb(0, 0, 0);
+                    background: rgba(0, 0, 0, 0.5);
+                    color: @color-w;
+                    width: 100%;
+                    height: 12.5%;
+                    transition: .5s ease; 
+                    display: flex;
+                    .sub-add {
+                        width: 52%;
+                        margin: 0;
+                        box-sizing: border-box;
+                        text-align: center;
+                        padding: 6px;
+                        background-color: @color-v;
+
+                        a {
+                            .text-value(14px, 23px, 700, 1px, 'Fira Sans');
+                            text-decoration: none;
+                            text-transform: @tran;
+                            color: @color-w;
+                            &:hover {
+                                color: @color-r;
+                            }
+                        }
+                    }
+
+                    .sub-icon {
+                        width: 16%;
+                        margin: 0;
+                        padding: 6px;
+                        text-align: center;
+                        border-width: 0 0 0 2px;
+                        border-style: solid;
+                        border-color: @color-w;
+                        background: @color-d-x;
+
+                        a {
+                            i {
+                                font-size: 18px;
+                                line-height: 25px;
+                                letter-spacing: 2px;
+                                color: @color-c;
+                                text-align: center;
+                            }
+
+                            &:hover {
+                                color: @color-r;
+                            }
+                        }
+                    }
+                }
+
+                .next {
+                    position: absolute;
+                    bottom: 50%;
+                    width: 100%;
+                    .flex-display;
+                    .flex-direction-row ;
+                    justify-content: space-between;
+
+                    a {
+                        color: @color-b;
+                    }
+                }
+            }
+
+            &:hover .product-hover-out {
+                .opacity(1);
+            }
+        }
+    }
+
+    .main__blog {
+        background: @color-bg-b;
+        margin-top: 102px;
+        padding-bottom: 50px;
+
+        h2 {
+            .text-value(56px, 28px, 700, 0, 'Cormorant Garamond');
+            text-align: center;
+            margin-top: -15px;
+            color: @color-x-d;
+            margin-bottom: 70px;
+            
+        }
+
+        .blog__content{
+            width: 100%;
+            margin-top: 32px;
+            background-color: @color-w;
+            border-color: rgba(0, 0, 0, 0.5);
+            text-align: left;
+
+            img {
+                width: 100%;
+            }
+
+            &__sub {
+                padding: 32px;
+                
+                .blog__time {
+                    text-transform: @tran;
+                    .text-value(14px, 24px, 400, 1px, 'Fira Sans');
+                    color: @color-c;
+                    .transform-translate(2px, -8px);
+                }
+    
+                .blog__title {
+                    .text-value(24px, 32px, 700, 1px, 'Cormorant Garamond');
+                    color: @color-x-d;
+                    padding-bottom: 30px;
+                    .transform-translate(1px, 1px);
+                }
+                
+                hr {
+
+                    width: 100%;
+                    resize: 2px;
+                    color: @color-c;
+                }
+
+                .blog__view-share {
+                    .transform-translate(2px, -8px);
+                    i {
+                        padding-right: 26px;
+                        font-size: 10px;
+                        color: @color-xb;
+                        font-style: normal;
+                        .opacity(0.5);
+    
+                        span {
+                            .text-value(14px, 32px, 400, 0, 'Fira Sans');
+                            padding-left: 12px;
+                            color: @color-x-d;
+                        }
+    
+                        &:hover {
+                            .opacity(1);
+                        }
+                    }
+                }
+            } 
+        }
+  
+        .blog__button {
+            width: 300px;
+            margin: auto;
+            justify-content: center;
+            .blog-khoi {
+                margin: 60px auto 50px auto;
+                background-color: @color-w;
+                width: 143px;
+                height: 16px;
+                border: none;
+                text-align: center;
+                .transform-translate(-3px, -13px);
+
+                a {
+                    text-decoration: none;
+                    top: -100%;
+                    position: relative;
+                    color: @color-x-d;
+                    .text-value(24px, 28px, 400, 0, 'Cormorant Garamond');
+                    
+                    &:hover {
+                        color: @color-v;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .main__logo {
+        margin: 35px 0 32px 0;
+        a {
+            padding: 10px;
+            img {
+                margin: 20px;
+                opacity: 0.3;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        
+        .sub-logo-1 {
+            .transform-translate(-6px ,-3px);
+        }
+
+        .sub-logo-2 {
+            .transform-translate(-11px , 8px);
+        }
+
+        .sub-logo-3 {
+            .transform-translate(0px , 6px);
+        }
+
+        .sub-logo-4 {
+            .transform-translate(-3px ,-9px);
+            
+        }
+
+        .sub-logo-5 {
+            .transform-translate(1px , -6px);
+        }
+
+        .sub-logo-6 {
+            .transform-translate(-22px , 20px);
+        }
+
+    }
+}

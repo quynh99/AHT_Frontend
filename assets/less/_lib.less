@@ -1,0 +1,93 @@
+
+/*---------------------Library-------------------------*/
+
+
+/*---------------------color-------------------------*/
+@color-w: white;
+@color-b: black;
+@color-x: #ababab;
+@color-c: #cccccc;
+@color-x-d: #333333;
+@color-d-x: #696969;
+@color-v: #d6ba8d;
+@color-r: red;
+@color-xb: #92c5d9;
+@color-bg-b: #faf9f9;
+@color-4: #404040;
+@color-2b: #2b2b2b;
+
+/*---------------------------------------------*/
+@tran: uppercase;
+
+/*---------------Mixin-------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @color-w;
+    font-family: 'Cormorant Garamond','Fira Sans', serif;
+}
+
+.container_customer {
+    max-width: 1720px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container_incus {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.text-value (@_font-size : @font-size, @_line-height : @line-height, @_font-weight : @font-weight, @_letter-spacing : @letter-spacing, @_font-family : @font-family) {
+    font-size: @_font-size;
+    line-height: @_line-height;
+    font-weight: @_font-weight;
+    letter-spacing: @_letter-spacing;
+    font-family: @_font-family;    	
+}
+
+.text-responsive (@_size, @_line, @_letter) {
+    font-size: @_size;
+    line-height: @_line;
+    letter-spacing: @_letter;  	
+}
+
+.flex-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: flex;
+}
+
+.flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.transform-translate(@_X, @_Y) {
+    -moz-transform: translate(@_X, @_Y);
+    -webkit-transform: translate(@_X, @_Y);
+    -ms-transform: translate(@_X, @_Y);
+    transform: translate(@_X, @_Y);
+}
+
+.opacity(@_op) {
+    opacity: @_op;
+}
